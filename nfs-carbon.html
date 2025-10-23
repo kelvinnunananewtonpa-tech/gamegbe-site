@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Need for Speed: Carbon - Download</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #4361ee, #7209b7);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 500px;
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: #ffea00;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .download-btn {
+      background: #ffea00;
+      color: #000;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background: #ffd500;
+      transform: scale(1.05);
+    }
+
+    .back {
+      margin-top: 20px;
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Popup message */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      z-index: 10;
+    }
+
+    .popup.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-message {
+      background: white;
+      color: #000;
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.2em;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/nfs-carbon.jpg" alt="Need for Speed Carbon">
+    <h1>Need for Speed: Carbon</h1>
+    <p>Join the underground street racing scene in Need for Speed: Carbon.  
+    Click below to start your download and dominate the canyon races!</p>
+
+    <!-- 👇 Button triggers JS popup -->
+    <a class="download-btn" href="downloads/Need-for-Speed-Carbon.zip" download onclick="showPopup()">
+      ⬇️ Download Now
+    </a>
+
+    <div class="back" onclick="window.location.href='index.html'">← Back to Home</div>
+  </div>
+
+  <!-- Popup message -->
+  <div id="popup" class="popup">
+    <div class="popup-message">
+      ✅ Your download has started!<br>Thanks for downloading.
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('show');
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 3000);
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Need for Speed: Carbon - Download</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #4361ee, #7209b7);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 500px;
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: #ffea00;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .download-btn {
+      background: #ffea00;
+      color: #000;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background: #ffd500;
+      transform: scale(1.05);
+    }
+
+    .back {
+      margin-top: 20px;
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    /* Popup message */
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+      z-index: 10;
+    }
+
+    .popup.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .popup-message {
+      background: white;
+      color: #000;
+      padding: 30px 40px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1.2em;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/nfs-carbon.jpg" alt="Need for Speed Carbon">
+    <h1>Need for Speed: Carbon</h1>
+    <p>Join the underground street racing scene in Need for Speed: Carbon.  
+    Click below to start your download and dominate the canyon races!</p>
+
+    <!-- 👇 Button triggers JS popup -->
+    <a class="download-btn" href="downloads/Need-for-Speed-Carbon.zip" download onclick="showPopup()">
+      ⬇️ Download Now
+    </a>
+
+    <div class="back" onclick="window.location.href='index.html'">← Back to Home</div>
+  </div>
+
+  <!-- Popup message -->
+  <div id="popup" class="popup">
+    <div class="popup-message">
+      ✅ Your download has started!<br>Thanks for downloading.
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.classList.add('show');
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVault - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #3a0ca3, #4361ee, #7209b7);
+      background-attachment: fixed;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 35px 0;
+      background: rgba(0, 0, 0, 0.2);
+      font-size: 2.2em;
+      color: #ffd60a;
+      font-weight: bold;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .game {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .game:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+    }
+
+    
+
+.logo-containter {
+   display:flex
+   justify-content:center;
+   align-items:flex-start;
+   height: 150vh;
+   padding-top: 20px;
+   }
+
+.logo {
+     width:300px
+     height:150px;
+      }
+
+.game img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius:10px;    
+      display: block;
+      margin:0 auto;
+      }
+
+    .game p {
+      padding: 15px;
+      font-size: 1.1em;
+      color: #ffea00;
+      font-weight: bold;
+      background: rgba(0, 0, 0, 0.3);
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+      color: #ddd;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(3px);
+      margin-top: 40px;
+    }
+
+    /* Responsive layout for smaller screens */
+    @media (max-width: 1000px) {
+      .game-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .game-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+ <div class="logo container"> 
+<img src="images/game-gbe.jpg" class="logo">
+</div>
+    <header>🎮 GameGbe </header>
+
+  <div class="game-grid">
+    <div class="game" onclick="window.location.href='nfs-carbon.html'">
+      <img src="images/nfs-carbon.jpg" alt="Need for Speed Carbon">
+      <p>Need for Speed: Carbon</p>
+    </div>
+
+    <div class="game" onclick="window.location.href='sleeping-dogs.html'">
+      <img src="images/sleeping-dogs.jpg" alt="Sleeping Dogs">
+      <p>Sleeping Dogs</p>
+    </div>
+
+    <!-- You can add more games like this -->
+    <!-- Example:
+    <div class="game" onclick="window.location.href='mafia.html'">
+      <img src="images/mafia.jpg" alt="Mafia">
+      <p>Mafia</p>
+    </div>
+    -->
+  </div>
+
+  <footer>© 2025 GameVault | All Rights Reserved</footer>
+</body>
+</html>s
